@@ -1,25 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+}
+
 /* Shared Styles */
 .display-flex{
     display: flex;
 }
 
+.section-description{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+
+.text-primary{
+    color: #E95A08;
+}
+
 .body{
     background-color: #F7F9FD;
-    max-width: 1140px;
 }
 
 /* Navbar */
 .navbar{
     justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-nav ul li{
+.nav-item{
     list-style: none;
+    margin-right: 50px;
 }
 
-nav ul li a{
+.nav-link{
     text-decoration: none;
-    margin-right: 50px;
+    color: #252432;
+}
+
+#l1, #l2{
+    font-weight: 400;
+    color: #8987A1;
+}
+
+#l3{
+    font-weight: 400;
+    color: #000000;
+}
+
+.banner{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.banner-content{
+    max-width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.banner-image{
+    width: 50%;
+    max-height: 355px;
+}
+
+.banner-title{
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    font-size: 4.06rem;
+    margin-bottom: 13px;
+}
+
+@media screen and (max-width: 576px) {
+    #l1, #l2, #l4{
+        visibility: hidden;
+    }
+
+    .navbar{
+        max-width: 360px;
+        margin: 0;
+    }
+
+    .logo{
+        width: 63px;
+        height: auto;
+    }
 }

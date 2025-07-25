@@ -116,11 +116,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
+    justify-content: center;
 }
 
 .cards{
     max-width: 270px;
-    max-height: 485px;
 }
 
 .card-image{
@@ -143,11 +143,11 @@
 }
 
 .card-button{
-    max-width: 100%;
+    width: 100%;
     background-color: #E95A08;
     color: #ffffff;
     border: none;
-    padding: 19px 80px;
+    padding: 19px 0px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 1rem;

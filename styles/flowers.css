@@ -233,6 +233,36 @@
         margin-top: 0;
     }
 
+    .flower-shop-container{
+        max-width: 100%;
+    }
+
+    .flower-shop-title{
+        font-family: "Noto Serif", serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    .card-containers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 16px;
+        justify-content: center;
+        padding: 0 14px;
+    }
+
+    .cards{
+        width: 100%;
+        max-width: 172px;
+        height: auto;
+    }
+
+    .card-image{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
     .body {
         overflow-x: hidden;
     }

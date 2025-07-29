@@ -39,6 +39,7 @@
 
 .body{
     background-color: #F7F9FD;
+    overflow-x: hidden;
 }
 
 .hide{
@@ -105,7 +106,9 @@
 }
 
 .flower-shop{
+    width: 100%;
     text-align: center;
+    justify-content: center;
 }
 
 .flower-shop-title{
@@ -113,18 +116,26 @@
 }
 
 .flower-shop-description{
-    margin-bottom: 50px;
+    max-width: 888px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+    padding: 0 16px; 
+    /* margin-bottom: 50px; */
+    /* margin-left: 126px; */
+    /* width: 888px; */
 }
 
 .card-containers{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
-    justify-content: center;
 }
 
 .cards{
     max-width: 270px;
+    box-sizing: border-box;
 }
 
 .card-image{
@@ -165,12 +176,26 @@
 
 .plants-lover{
     display: flex;
+    justify-content: space-between;
 }
 
 .plants-lover-image{
-    width: 50%;
-    height: 597px;
+    width: 540px;
+    height: 100%;
 
+}
+
+.shop-benefits{
+    width: 540px;
+    margin-top: 30px;
+}
+
+.shop-benefit-title{
+    margin-bottom: 0;
+}
+
+.benefit-description{
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -249,25 +274,36 @@
         margin-top: 0;
     }
 
+    .flower-shop-description{
+        max-width: 336px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 50px auto;
+        padding: 0 16px;
+    }
+
     .flower-shop-container{
         max-width: 100%;
         margin-top: 60px;
+        padding: 0 16px; 
+        box-sizing: border-box;
     }
 
     .flower-shop-title{
         font-family: "Noto Serif", serif;
         font-weight: 700;
         font-size: 1.5rem;
+        margin-left: 15px;
     }
 
     .card-containers{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px 16px;
+        gap: 30px 10px;
         justify-content: center;
         padding: 0 14px;
-        /* margin-right: 0; */
-        margin-left: 6px;
+        margin-right: 0;
+        margin-left: 0px;
     }
 
     .cards{
@@ -280,6 +316,21 @@
         width: 100%;
         height: auto;
         display: block;
+    }
+
+    .plants-lover{
+        flex-direction: column;
+        width: 361px;
+        margin-left: 30px;
+    }
+
+    .plants-lover-image{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .shop-benefits{
+        width: 100%;
     }
 
     .body {

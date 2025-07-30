@@ -133,7 +133,7 @@
 .cards{
     max-width: 270px;
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .card-image{
@@ -181,6 +181,13 @@
     width: 540px;
     height: 100%;
 
+}
+
+.trusted-badge{
+    width: 286px;
+    height: 286px;
+    margin-top: -126px;
+    margin-left: -190px;
 }
 
 .shop-benefits{
@@ -303,10 +310,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 30px 10px;
         justify-content: center;
-        padding: 0 14px;
-        padding-left: 10px;
+        padding: 0 10px;
+        padding-left: 3px;
         margin-right: 0;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .cards{
@@ -335,6 +342,10 @@
         width: 100%;
         margin-bottom: 0;
         display: block; 
+    }
+
+    .trusted-badge{
+        display: none;
     }
 
     .shop-benefits{

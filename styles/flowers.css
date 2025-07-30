@@ -74,6 +74,7 @@
     color: #000000;
 }
 
+/* Banner Styles */
 .banner{
     display: flex;
     max-width: 1140px;
@@ -99,6 +100,7 @@
     margin-bottom: 13px;
 }
 
+/* FLower Shop Styles */
 .flower-shop-container{
     max-width: 1140px;
     margin: 0 auto;
@@ -164,8 +166,14 @@
     font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 1rem;
+    transition: background-color 0.5s ease;
 }
 
+.card-button:hover{
+    background-color: #C74B06;
+}
+
+/* Plants Lover */
 .plants-lover-container{
     max-width: 1140px;
     margin: 0 auto;
@@ -175,12 +183,12 @@
 .plants-lover{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 .plants-lover-image{
     width: 540px;
     height: 100%;
-
 }
 
 .trusted-badge{
@@ -205,6 +213,45 @@
 
 .benefit-description li{
     margin-bottom: 12px;
+}
+
+/* Latest Deals */
+.latest-deals-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.latest-deal{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.latest-deals-title{
+    margin-bottom: 16px;
+}
+
+.latest-deals-description{
+    max-width: 888px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 120px auto;
+    padding: 0 16px;  
+}
+
+.latest-deals-images{
+    display: grid;
+}
+
+.deal-img{
+    border-radius: 10px;
+}
+
+@media (hover: none) {
+  .card-button:hover {
+    background-color: #E95A08;
+  }
 }
 
 @media screen and (max-width: 576px) {

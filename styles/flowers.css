@@ -318,6 +318,10 @@
         display: block;
     }
 
+    .plants-lover-container {
+        margin-top: 42px;
+    }
+
     .plants-lover{
         flex-direction: column;
         width: 361px;
@@ -326,11 +330,26 @@
 
     .plants-lover-image{
         width: 100%;
-        margin-top: 0px;
+        margin-bottom: 0;
+        display: block; 
     }
 
     .shop-benefits{
         width: 100%;
+        margin-top: 0;
+    }
+
+    .shop-benefit-title{
+        font-family: "Noto Serif", serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+
+    .benefit-description{
+        padding-left: 0;             
+        margin-left: 20px; 
     }
 
     .body {

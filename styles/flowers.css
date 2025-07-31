@@ -242,10 +242,10 @@
 
 .latest-deals-images{
     display: grid;
-}
-
-.deal-img{
-    border-radius: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    
 }
 
 @media (hover: none) {

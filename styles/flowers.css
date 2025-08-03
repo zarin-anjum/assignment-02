@@ -363,6 +363,16 @@ html, body {
     padding: 19px 50px;
 }
 
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: start;
+    /* padding: 50px 100px; */
+    margin: 50px 160px;
+    gap: 90px;
+}
+
 @media (hover: none) {
   .card-button:hover {
     background-color: #E95A08;

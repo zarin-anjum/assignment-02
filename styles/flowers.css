@@ -369,13 +369,18 @@ footer{
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: start;
-    gap: 90px;
+    gap: 50px;
     padding: 50px 150px;
 }
 
 .footer-description{
     margin-top: 16px;
     width: 360px;
+}
+
+.col-3{
+    justify-content: center;
+    align-items: center;
 }
 
 .col-2 ul, .col-3 ul{
@@ -655,30 +660,28 @@ footer{
     footer{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 0;
         padding: 30px 20px;
-        text-align: center;
-        align-items: center;
+        text-align: left;
+        align-items: flex-start;
     }
 
     .footer-description{
-        width: 100%;
-        margin: 0 auto;
+        width: 330px;
+        margin: 0;
     }
 
     .col-2, .col-3{
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     .col-2 ul, .col-3 ul{
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    .col-2{
-        margin: 0;
+        gap: 32px;
+        align-items: flex-start;
         padding: 0;
     }
 
@@ -686,7 +689,7 @@ footer{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 16px;
+        margin-top: 20px;
     }
 
 

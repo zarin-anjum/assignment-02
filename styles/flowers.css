@@ -363,14 +363,39 @@ html, body {
     padding: 19px 50px;
 }
 
+/* Footer */
 footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: start;
-    /* padding: 50px 100px; */
-    margin: 50px 160px;
     gap: 90px;
+    padding: 50px 150px;
+}
+
+.footer-description{
+    margin-top: 16px;
+    width: 360px;
+}
+
+.col-2 ul, .col-3 ul{
+    flex-direction: column;
+    gap: 26px;
+}
+
+.footer-links{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #6B7280;
+}
+
+.col-4{
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
 @media (hover: none) {
@@ -626,6 +651,44 @@ footer{
         width: 95px;
         padding: 10px;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-description{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col-2, .col-3{
+        width: 100%;
+    }
+
+    .col-2 ul, .col-3 ul{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .col-2{
+        margin: 0;
+        padding: 0;
+    }
+
+    .col-4 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
 
     html, .body {
         margin: 0;
